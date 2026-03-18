@@ -27,15 +27,6 @@ A **secure and modular Python password manager** that encrypts your passwords us
 
 ---
 
-## 🖥️ Demo (Optional)
-
-Add a screenshot or GIF of your program running here:
-
-![Demo](screenshot.png)  
-> Example: main menu and adding/retrieving passwords  
-
----
-
 ## ⚡ How It Works
 
 1. **Encryption:** User passwords are encrypted using a **secret key (`Fernet`)**.  
