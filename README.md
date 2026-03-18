@@ -1,40 +1,56 @@
-# Encrypted Password Manager
+# Encrypted Password Manager 🔒
 
-A secure and easy-to-use **Python password manager** that allows you to safely store and retrieve your passwords. All passwords are encrypted using **cryptography** and stored securely in a JSON file.
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python) ![GitHub](https://img.shields.io/badge/GitHub-Repo-black?logo=github)
 
----
-
-## Features
-
-- Add new account passwords securely
-- Retrieve saved passwords
-- Passwords are encrypted using **Fernet symmetric encryption**
-- Stores all data in a JSON file
-- Modular and clean Python code structure
+A **secure and modular Python password manager** that encrypts your passwords using **Fernet encryption** and stores them safely in a JSON file. Ideal for learning encryption, file handling, and modular coding.
 
 ---
 
-## Technologies Used
+## 🚀 Features
+
+- Add new account passwords securely  
+- Retrieve saved passwords  
+- All passwords are encrypted using **Fernet symmetric encryption**  
+- Stored in **JSON** for lightweight, portable storage  
+- Clean, modular Python code (`utils/encryption.py` & `utils/storage.py`)  
+- Error handling and secure file management  
+
+---
+
+## 🛠️ Technologies Used
 
 - **Python 3.13**  
-- **cryptography** library (`Fernet`) for password encryption and decryption  
-- **JSON** for lightweight data storage  
-- Modular code with `utils` folder for encryption and storage  
-- File handling and exception handling
+- **cryptography** library (`Fernet`)  
+- **JSON** file storage  
+- Modular code structure  
+- File handling and exception handling  
 
 ---
 
-## How It Works
+## 🖥️ Demo (Optional)
 
-1. **Encryption:** Passwords entered by the user are encrypted using a secret key (`Fernet`) before storage.  
-2. **Storage:** Encrypted passwords are stored in `passwords.json` as key-value pairs.  
-3. **Decryption:** When retrieving passwords, the program decrypts them using the same secret key.  
+Add a screenshot or GIF of your program running here:
+
+![Demo](screenshot.png)  
+> Example: main menu and adding/retrieving passwords  
 
 ---
 
-## Usage
+## ⚡ How It Works
 
-1. Clone this repository:
+1. **Encryption:** User passwords are encrypted using a **secret key (`Fernet`)**.  
+2. **Storage:** Encrypted passwords are saved in `passwords.json`.  
+3. **Decryption:** Passwords are decrypted when retrieved using the same secret key.  
 
-```bash
-git clone https://github.com/YOUR_USERNAME/Encrypted-Password-Manager.git
+---
+
+## 📂 Folder Structure
+
+```text
+Encrypted Password Manager/
+│── main.py
+│── passwords.json (auto-created)
+│── secret.key (auto-created)
+│── utils/
+    │── encryption.py
+    │── storage.py
